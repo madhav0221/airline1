@@ -17,14 +17,14 @@ class Details
 {
     public:
     static string name, gender;
-    int phoneNo;
-    int age;
+    string phoneNo;
+    string age;
     string add;
-    static int cId;
+    static string cId;
     char arr[100];
     void information()
     {
-        cout<<"\nEnter the customer ID: ";
+        cout<<"\nEnter the customer ID:\n ";
         cin>>cId;
         cout<<"\nEnter the name: ";
         cin>>name;
@@ -39,7 +39,7 @@ class Details
     }
 };
 
-int Details::cId;
+string Details::cId;
 string Details::name;
 string Details:: gender;
 
@@ -49,7 +49,7 @@ class Registration
 public:
    static int choice;
    int choice1;
-   int back;
+   char back;
    static float charges;
 
    void flights()
@@ -422,7 +422,7 @@ class Ticket : public Registration, Details
 void mainMenu(){
     int lchoice;
     int schoice;
-    int back;
+    char back;
     cout<<"\t             Bhatia Airlines \n"<<endl;
     cout<<"\t___________Main Menu__________"<<endl;
     cout<<"\t_________________________________________"<<endl;
