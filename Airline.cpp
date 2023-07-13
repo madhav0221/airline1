@@ -30,7 +30,7 @@ class Details
         cin>>name;
         cout<<"\nEnter the age: ";
         cin>>age;
-        cout<<"\nAdress: ";
+        cout<<"\nAddress: ";
         cin>>add;
         cout<<"\nGender: ";
         cin>>gender;
